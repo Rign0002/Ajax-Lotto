@@ -29,6 +29,7 @@ function generateClick() {
     let maxValue = document.querySelector("#max").value;
 
 
+
     let url = "https://davidst.edumedia.ca/mad9014/nums.php?";
     let form = new FormData();
     let configurations = {
@@ -45,6 +46,9 @@ function generateClick() {
         home.classList.toggle("page");
 
     }
+
+
+
 
     form.append("digits", digitsValue);
     form.append("max", maxValue);
@@ -78,4 +82,3 @@ function restartClick() {
     home.classList.toggle("page");
     location.reload();
 }
-

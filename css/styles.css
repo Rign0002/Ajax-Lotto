@@ -70,7 +70,12 @@ CODE FOR JS
 .page {
     display: none;
 }
+
 li{
+    color: white;
+    padding: 2%;
+    text-align: center;
+    width: 100%;
     list-style-type: none;
     border: 1px solid hsl(240deg 25% 15%);
 }
@@ -87,7 +92,7 @@ MEDIA QUERIES
         text-align: right;
     }
 
-    .main p:nth-child(2) {
+    .main p:nth-of-type(2) {
         display: flex;
     }
 
@@ -106,7 +111,10 @@ MEDIA QUERIES
         align-items: center;
     }
     #btnBack {
-        padding: 4%;
+        padding: 6%;
+    }
+    #list section p{
+        text-align: center;
     }
 }
 
