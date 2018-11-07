@@ -29,7 +29,7 @@ function generateClick() {
     let maxValue = document.querySelector("#max").value;
 
 
-    let url = "http://davidst.edumedia.ca/mad9014/nums.php?";
+    let url = "https://davidst.edumedia.ca/mad9014/nums.php?";
     let form = new FormData();
     let configurations = {
         mode: "cors",
