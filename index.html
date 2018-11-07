@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX Lotto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div id="home" class="page">
+        <header>
+            <h1>Lotto Numbers</h1>
+        </header>
+        <section class="main">
+            <p class="formBox">
+                <label for="digits">Number of Digits</label>
+                <input id="digits" type="number" max="10" min="1" placeholder="1-10" />
+            </p>
+            <p class="formBox">
+                <label for="max">Range 1 to</label>
+                <input id="max" type="number" min="1" max="99" placeholder="99" />
+            </p>
+            <p class="formBox buttons">
+                <button id="btnSend">Feelin' Lucky?</button>
+            </p>
+        </section>
+    </div>
+    <div id="list" class="page">
+        <header>
+            <h1>Lotto Numbers</h1>
+        </header>
+        <section class="main">
+            <p id="errorMessage"></p>
+            <ul class="num_list">
+
+                <!-- display the generated numbers from the server -->
+            </ul>
+            <p>
+                <button id="btnBack">Start Again</button>
+            </p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; Justin Rignault Copyright</p>
+    </footer>
+    <script src="js/code.js"></script>
+</body>
+</html>

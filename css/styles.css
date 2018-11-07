@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+html {
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+h1 {
+    color: hsl(240deg 25% 15%);
+}
+
+body {
+    background-color: rgb(0, 162, 154);
+}
+
+button {
+    cursor: grab;
+}
+
+#digits {
+    width: 40px;
+    text-align: center;
+}
+
+#btnSend {
+    background-color: hsl(240deg 30% 60%);
+    color: white;
+    height: auto;
+    padding: 4% 12%;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+#btnSend:hover {
+    background-color: rgb(210, 21, 149);
+}
+
+#btnBack {
+    color: white;
+    background-color: hsl(240deg 80% 50%);
+    padding: 3% 5%;
+}
+
+#btnBack:hover {
+    background-color: hsl(240deg 80% 55%);
+}
+
+p > input {
+    background-color: hsl(240deg 25% 15%);
+    border: none;
+}
+
+::placeholder {
+    color: rgb(150, 150, 150);
+}
+
+footer p {
+    font-size: 0.4rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+#digits, #max{
+    color: white;
+}
+
+
+/***************
+CODE FOR JS
+***************/
+
+.page {
+    display: none;
+}
+li{
+    list-style-type: none;
+    border: 1px solid hsl(240deg 25% 15%);
+}
+
+
+
+
+/***************
+MEDIA QUERIES
+***************/
+
+@media (max-width: 549px) {
+    #digits::placeholder {
+        text-align: right;
+    }
+
+    .main p:nth-child(2) {
+        display: flex;
+    }
+
+    #max {
+        flex-basis: 25%;
+        text-align: center;
+    }
+
+    label[for="max"] {
+        flex-basis: 75%;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #btnBack {
+        padding: 4%;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 899px) {
+    html {
+        font-size: 1.7rem;
+    }
+
+    ::placeholder {
+        font-size: 0.4rem;
+        text-align: right;
+
+    }
+
+    p > input {
+        padding: 2%;
+    }
+
+
+    .main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .main > p,
+    header > h1 {
+        text-align: center;
+    }
+
+    .main p:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+
+    }
+
+    .main p:nth-child(2) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .main p:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+    #btnBack {
+        font-size: 0.7rem;
+    }
+
+
+}
+
+@media (min-width: 900px) {
+    html {
+        font-size: 2rem;
+    }
+
+    ::placeholder {
+        font-size: 0.44rem;
+        text-align: right;
+    }
+
+    p > input {
+        padding: 3%;
+        margin-left: 5%
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .main > p,
+    header > h1 {
+        text-align: center;
+    }
+
+    .main p:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+
+    }
+
+    .main p:nth-child(2) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .main p:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+    #btnBack {
+        font-size: 1rem;
+    }
+
+}
